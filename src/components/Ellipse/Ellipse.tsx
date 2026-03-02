@@ -56,7 +56,7 @@ const Ellipse : React.FC<EllipseProps> = ({
       duration: 1,
       ease: "slow",
       onUpdate: function() {
-        element.textContent = obj.value.toString();
+        element.textContent = Math.round(this.targets()[0].value).toString();
       }
     });
   };
